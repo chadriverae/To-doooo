@@ -1,0 +1,33 @@
+html {
+    background-color: antiquewhite;
+}
+
+h1 {
+    font-family: 'Outfit';
+    text-align: center;
+}
+
+.task {
+    font-family: 'Quicksand';
+    font-size: meduim;
+    margin:auto;
+    color: rgb(33, 33, 33);
+}
+
+.block {
+    display: block;
+    text-align: center;
+}
+
+#tasks-container {
+    margin: 0 auto;
+    width: 50%;
+
+}
+
+.divider {
+    border-bottom: 1px solid #888989;
+    margin: 2px auto;
+    width: 40%;
+}
+
