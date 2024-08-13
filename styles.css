@@ -19,34 +19,18 @@ h1 span {
 }
 
 
-.todo-list {
-    list-style-type: none;
+#tasks-container {
     padding: 0;
 }
 
-.todo-list li {
-    /* font-size: meduim; */
-    font-size: 1.65rem;
-    margin-bottom: 6px;
-    font-family: 'Quicksand';
-    margin:auto;
+#tasks-container li {
     color: rgb(33, 33, 33);
     display: flex; /* Enable flexbox on the list items */
     align-items: center; /* Center the checkbox and text vertically */
 }
 
 
-#tasks-container {
-    margin: 40px auto;
-    width: 15%;
-    
-}
-
-.todo-list input[type="checkbox"] {
-    margin-right: 10px;
-    width: 16px;  /* Set the width of the checkbox */
-    height: 16px; /* Set the height of the checkbox */
-    border-radius: 50%; /* Make it a circle */
+#tasks-container input[type="checkbox"] {
     appearance: none; /* Remove the default checkbox styling */
     -webkit-appearance: none; /* Ensure cross-browser consistency */
     outline: none; /* Remove the default outline */
