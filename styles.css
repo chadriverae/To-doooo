@@ -97,10 +97,10 @@ h1 span {
 }
 
 .deleteTaskIcon:hover {
-    color: rgb(253, 81, 81);
-    background-color: rgba(255, 24, 24, 0.1);
-    border-radius: 30px;
-    box-shadow: 0 0 18px 1px rgba(255, 24, 24, 0.2);
+    color: rgba(218, 94, 94, 0.739);
+    /* background-color: rgba(255, 24, 24, 0.1); */
+    /* border-radius: 30px; */
+    /* box-shadow: 0 0 18px 1px rgba(255, 24, 24, 0.2); */
 }
 .divider {
     border-bottom: .7px solid #bebebe;
@@ -169,5 +169,5 @@ h1 span {
 .taskName:focus {
     background: rgba(159, 159, 159, 0.155);
     box-shadow: 0 0 4px 1px rgba(81, 81, 81, 0.051);
-    padding: 6px 0 6px 14px;
+    padding: 4px 0 4px 14px;
 }

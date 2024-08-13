@@ -20,9 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const addTaskItem = document.getElementById("addTaskContainer")
 
     addTaskItem.addEventListener("click", function() {
-        const taskName = prompt('Enter the name of the new task:');
-        
-        if (taskName) {
             // Create a new list item
             const newTask = document.createElement('li');
             
@@ -32,9 +29,9 @@ document.addEventListener('DOMContentLoaded', () => {
             
             // Create a label for the checkbox
             const taskNameInput = document.createElement('input');
-            taskNameInput.type = "text";
-            taskNameInput.value = taskName;
             taskNameInput.className = "taskName"
+            taskNameInput.type = "text";
+            taskNameInput.placeholder = "Enter task name...";
             
             // Create delete icon
             const icon = document.createElement('i');
@@ -53,8 +50,9 @@ document.addEventListener('DOMContentLoaded', () => {
             // Append the new list item to the tasks container
             tasksContainer.appendChild(newTask);
             tasksContainer.appendChild(divider);
-        }
-    });
+
+            taskNameInput.focus();
+        });
 
     function deleteParent(event) {
         // Make sure the clicked element is an icon
