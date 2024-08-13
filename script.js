@@ -44,9 +44,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-
-
-
     function deleteParent(event) {
         // Make sure the clicked element is an icon
         if (event.target.classList.contains('deleteTaskIcon')) {
