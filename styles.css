@@ -71,3 +71,13 @@ h1 span {
     width: 100%;
 }
 
+#add-task-icon {
+    font-size: 18px;
+    margin-right: 8px;
+    color: #948aff;
+}
+
+#add-task-label {
+    color: #7c7c7c;
+    font-size: 1rem;
+}
