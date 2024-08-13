@@ -1,7 +1,7 @@
-const tasksContainer = document.getElementById('tasks-container');
-const addTaskItem = document.getElementById("add-task")
+const tasksContainer = document.getElementById('tasksContainer');
+const addTaskItem = document.getElementById("addTaskContainer")
 
-document.getElementById("add-task").addEventListener("click", function() {
+addTaskItem.addEventListener("click", function() {
     const taskName = prompt('Enter the name of the new task:');
     
     if (taskName) {
