@@ -31,14 +31,10 @@ document.addEventListener('DOMContentLoaded', () => {
             checkbox.type = 'checkbox';
             
             // Create a label for the checkbox
-            const label = document.createElement('label');
-            label.textContent = taskName;
-            
-            
-            // Assign an ID to the checkbox and label
-            const taskId = `task${(tasksContainer.children.length / 2 )+ 1}`;
-            checkbox.id = taskId;
-            label.htmlFor = taskId;
+            const taskNameInput = document.createElement('input');
+            taskNameInput.type = "text";
+            taskNameInput.value = taskName;
+            taskNameInput.className = "taskName"
             
             // Create delete icon
             const icon = document.createElement('i');
@@ -47,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Append the checkbox and label to the list item
             newTask.appendChild(checkbox);
-            newTask.appendChild(label);
+            newTask.appendChild(taskNameInput);
             newTask.appendChild(icon);
             
             // Insert a divider after the new task
@@ -76,7 +72,5 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     }
-
-    // Attach the event listener to the tasks container
     tasksContainer.addEventListener('click', deleteParent);
 });
