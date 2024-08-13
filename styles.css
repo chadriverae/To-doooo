@@ -13,20 +13,30 @@ h1 {
     font-family: 'Outfit';
     text-align: center;
 }
-
 h1 span {
     color: #A46BFF;
 }
 
 
 #tasks-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    width: 100%;
+    max-width: 400px;
     padding: 0;
+    margin: 0;
+    font-family: 'Quicksand';
 }
 
 #tasks-container li {
+    font-size: 1.7rem;
+    min-width: 10px;
     color: rgb(33, 33, 33);
-    display: flex; /* Enable flexbox on the list items */
-    align-items: center; /* Center the checkbox and text vertically */
+    font-weight: 550;
+    display: flex;
+    align-items: center;
 }
 
 
@@ -34,8 +44,12 @@ h1 span {
     appearance: none; /* Remove the default checkbox styling */
     -webkit-appearance: none; /* Ensure cross-browser consistency */
     outline: none; /* Remove the default outline */
+    width: 16px;  /* Set the width of the checkbox */
+    height: 16px; /* Set the height of the checkbox */
+    border-radius: 50%; /* Make it a circle */
     background-color: white; /* Set background color */
     border: 2px solid gray; /* Border color and thickness */
+    margin-right: 20px;
     cursor: pointer; /* Change cursor to pointer on hover */
 }
 
