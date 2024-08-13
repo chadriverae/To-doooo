@@ -21,7 +21,7 @@ h1 span {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 400px;
+    max-width: 350px;
     font-family: 'Quicksand';
     gap: 3px;
 }
@@ -70,6 +70,19 @@ h1 span {
     color: gray;
 }
 
+.deleteTaskIcon {
+    font-size: 1rem;
+    margin-left: auto;
+    color: #51515183;
+    transition: all .2s ease-in-out;
+}
+
+.deleteTaskIcon:hover {
+    color: rgb(253, 81, 81);
+    background-color: rgba(255, 24, 24, 0.1);
+    border-radius: 30px;
+    box-shadow: 0 0 18px 1px rgba(255, 24, 24, 0.2);
+}
 .divider {
     border-bottom: .9px solid #888989;
     margin: 6px auto;
@@ -83,9 +96,10 @@ h1 span {
     transition: all 0.2s ease-in-out;
 }
 
-#addTaskContainer:hover, #addTaskContainer label {
+.deleteTaskIcon, #addTaskContainer:hover, #addTaskContainer label {
     cursor: pointer;
 }
+
 #addTaskContainer:hover {
     background-color: rgba(223, 181, 255, 0.2);
     border-radius: 30px;
