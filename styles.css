@@ -58,14 +58,14 @@ h1 span {
     cursor: pointer;
 }
 
-.todo-list input[type="checkbox"]:checked {
+#tasksContainer input[type="checkbox"]:checked {
     background-color: gray;
     border-color: gray;
     position: relative;
     
 }
 
-.todo-list input[type="checkbox"]:checked + label {
+#tasksContainer input[type="checkbox"]:checked + label {
     text-decoration: line-through;
     color: gray;
 }
