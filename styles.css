@@ -114,7 +114,7 @@ h1 span {
     transition: all 0.2s ease-in-out;
 }
 
-.deleteTaskIcon, #addTaskContainer:hover, #addTaskContainer label {
+.deleteTaskIcon:hover, #addTaskContainer:hover, #addTaskContainer label, #darkModeToggle:hover{
     cursor: pointer;
 }
 
