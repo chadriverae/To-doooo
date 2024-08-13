@@ -1,5 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+    const toggleButton = document.getElementById('darkModeToggle');
+
+    toggleButton.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+    });
+
     const tasksContainer = document.getElementById('tasksContainer');
     const addTaskItem = document.getElementById("addTaskContainer")
 

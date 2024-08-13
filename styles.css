@@ -1,11 +1,30 @@
+:root {
+    --background-color: #efefeff6;
+    --text-color: rgb(33, 33, 33);
+}
+
+body.dark-mode {
+    background-color: #333333;
+    color: #dddddd;
+}
+
 body {
-    background-color: #efefeff6;
+    background-color: var(--background-color);
+    color: var(--text-color);
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0;
     padding: 0;
+    transition: background-color 0.3s, color 0.3s;
 }
+
+button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
 
 h1 {
     font-size: 3rem;
@@ -39,7 +58,6 @@ h1 span {
 #tasksContainer li {
     font-size: 1.7rem;
     min-width: 10px;
-    color: rgb(33, 33, 33);
     font-weight: 550;
     display: flex;
     align-items: center;
@@ -84,7 +102,7 @@ h1 span {
     box-shadow: 0 0 18px 1px rgba(255, 24, 24, 0.2);
 }
 .divider {
-    border-bottom: .9px solid #888989;
+    border-bottom: .7px solid #bebebe;
     margin: 6px auto;
     width: 100%;
 }
@@ -117,3 +135,4 @@ h1 span {
     color: #7c7c7c;
     font-size: 1rem;
 }
+
