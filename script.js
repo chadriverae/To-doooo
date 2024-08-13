@@ -25,7 +25,7 @@ addTaskItem.addEventListener("click", function() {
         newTask.appendChild(checkbox);
         newTask.appendChild(label);
 
-        // Insert a divider after the new task (if needed)
+        // Insert a divider after the new task
         const divider = document.createElement('div');
         divider.className = 'divider';
 
