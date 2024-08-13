@@ -165,7 +165,8 @@ h1 span {
     border-radius: 25px;
 }
 
-.taskName:hover {
+.taskName:hover,
+.taskName:focus {
     background: rgba(159, 159, 159, 0.155);
     box-shadow: 0 0 4px 1px rgba(81, 81, 81, 0.051);
     padding: 6px 0 6px 14px;
