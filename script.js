@@ -16,10 +16,10 @@ document.addEventListener('DOMContentLoaded', () => {
         toggleButton.textContent = isDarkMode ? 'dark_mode' : 'light_mode';
     });
     
-    const tasksContainer = document.getElementById("taskList");
-    const addTaskItem = document.getElementById("addTaskSection")
+    const tasksList = document.getElementById("taskList");
+    const addTaskSection = document.getElementById("addTaskSection")
 
-    addTaskItem.addEventListener("click", function() {
+    addTaskSection.addEventListener("click", function() {
             // Create a new list item
             const newTask = document.createElement('li');
             
@@ -48,8 +48,8 @@ document.addEventListener('DOMContentLoaded', () => {
             divider.className = 'divider';
             
             // Append the new list item to the tasks container
-            tasksContainer.appendChild(newTask);
-            tasksContainer.appendChild(divider);
+            tasksList.appendChild(newTask);
+            tasksList.appendChild(divider);
 
             taskNameInput.focus();
         });
@@ -70,5 +70,5 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     }
-    tasksContainer.addEventListener('click', deleteParent);
+    tasksList.addEventListener('click', deleteParent);
 });
