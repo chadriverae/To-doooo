@@ -23,6 +23,7 @@ header {
     justify-content: center;
     position: relative;
     width: 100%;
+    padding-top: 40px;
 }
 
 /* Logo Styles */
@@ -81,7 +82,6 @@ h1 span {
     display: flex;
     align-items: center;
 }
-
 
 
 /* Checkbox Styles */
