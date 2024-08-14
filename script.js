@@ -16,8 +16,8 @@ document.addEventListener('DOMContentLoaded', () => {
         toggleButton.textContent = isDarkMode ? 'dark_mode' : 'light_mode';
     });
     
-    const tasksContainer = document.getElementById('tasksContainer');
-    const addTaskItem = document.getElementById("addTaskContainer")
+    const tasksContainer = document.getElementById("taskList");
+    const addTaskItem = document.getElementById("addTaskSection")
 
     addTaskItem.addEventListener("click", function() {
             // Create a new list item
