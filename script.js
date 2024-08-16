@@ -37,7 +37,6 @@ document.addEventListener('DOMContentLoaded', () => {
             const icon = document.createElement('i');
             icon.textContent = "delete";
             icon.className = "material-icons deleteTaskIcon";
-
             // Append the checkbox and label to the list item
             newTask.appendChild(checkbox);
             newTask.appendChild(taskNameInput);
