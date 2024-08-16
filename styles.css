@@ -49,9 +49,6 @@ h1 span {
     transform: scale(1.1);
 }
 
-#taskList li:hover .deleteTaskIcon {
-    opacity: 1; /* Show the icon when hovering over the list item */
-}
 
 /* Task Panel styles */
 #taskPanel {
@@ -61,7 +58,7 @@ h1 span {
     justify-content: center;
     margin:auto;
     width: 100%;
-    max-width: 300px;
+    max-width: 350px;
     margin-top: 30px;
     gap: 6px;
 }    
@@ -111,8 +108,7 @@ h1 span {
 
 /* Delete task Styles */
 .deleteTaskIcon {
-    transform: scale(.8);
-    margin-left: auto;
+    transform: scale(.9);
     color: #51515183;
     opacity: 0;
     transition: all .2s ease-in-out;
@@ -120,8 +116,12 @@ h1 span {
 
 .deleteTaskIcon:hover {
     color: rgb(218, 94, 94);
-    transform: scale(.9);
+    transform: scale(1);
 }
+#taskList li:hover > .deleteTaskIcon {
+    opacity: 1;
+}
+
 /* Add Task Section Styles */
 #addTaskSection {
     display: flex;
@@ -149,7 +149,7 @@ h1 span {
 
 /* Task Name Styles */
 .taskName {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 550;
     border: none;
     background: none;
