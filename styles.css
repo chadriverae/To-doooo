@@ -97,11 +97,22 @@ h1 span {
 }
 
 #taskList input[type="checkbox"]:checked {
+    transition: 0.2s ease-in-out;
     background-color: gray;
     border-color: gray;
     position: relative;
 }
 
+#taskList input[type="checkbox"]:checked::before {
+    content: "\2713"; /* Unicode character for checkmark */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 #taskList input[type="checkbox"]:checked + input[type="text"] {
     text-decoration: line-through;
     color: gray;
