@@ -1,6 +1,7 @@
 :root {
     --background-color: #efefeff6;
     --text-color: rgb(33, 33, 33);
+    font-size: 22px;
 }
 
 body.dark-mode {
@@ -40,9 +41,9 @@ h1 span {
 
 /* Dark mode toggle Styles */
 #darkModeToggle {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-top: 12px;
-    margin-left: 20px;
+    margin-left: 40px;
 }
 
 #darkModeToggle:hover {
@@ -59,7 +60,7 @@ h1 span {
     margin:auto;
     width: 100%;
     max-width: 350px;
-    margin-top: 30px;
+    margin-top: 50px;
     gap: 6px;
 }    
 
@@ -108,7 +109,7 @@ h1 span {
 
 /* Delete task Styles */
 .deleteTaskIcon {
-    transform: scale(.9);
+    transform: scale(1.1);
     color: #51515183;
     opacity: 0;
     transition: all .2s ease-in-out;
@@ -131,7 +132,7 @@ h1 span {
 }
 
 #addTaskIcon {
-    font-size: 18px;
+    font-size: 1.2rem;
     margin-right: 8px;
     color: #948aff;
 }
