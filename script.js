@@ -51,6 +51,23 @@ document.addEventListener('DOMContentLoaded', () => {
             tasksList.appendChild(divider);
 
             taskNameInput.focus();
+
+              // Add event listener for the Enter key
+            taskNameInput.addEventListener('keydown', function(event) {
+                if (event.key === 'Enter') {
+                    // Remove focus from the input field
+                    taskNameInput.blur();
+                    // Add a class to cancel hover effects
+                    newTask.classList.add('no-hover');
+                }
+            });
+
+            // Remove no-hover class on mouse enter
+            newTask.addEventListener('mouseenter', function() {
+                if (!taskNameInput.matches(':focus')) {
+                    newTask.classList.remove('no-hover');
+                }
+            });
         });
 
     function deleteParent(event) {

@@ -81,7 +81,6 @@ h1 span {
     align-items: center;
 }
 
-
 /* Checkbox Styles */
 #taskList input[type="checkbox"] {
     appearance: none;
@@ -180,6 +179,10 @@ h1 span {
     background: rgba(159, 159, 159, 0.155);
     box-shadow: 0 0 4px 1px rgba(81, 81, 81, 0.051);
     padding: 1px 0 1px 14px;
+}
+
+#taskList li.no-hover .deleteTaskIcon {
+    opacity: 0 !important;
 }
 
 /* General Hover Styles */
